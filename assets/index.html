@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Favicons Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+    <!-- Favicons End -->
+
+    <!-- Load  CSS  -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- Load  CSS  -->
+
+    <!-- Custom Browsers Color Start -->
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <!-- Custom Browsers Color End -->
+</head>
+<body>
+
+<header class="header">
+
+    <div class="row expanded align-middle">
+
+        <div class="small-12 medium-5 large-4 columns">
+            <div class="header_right row align-middle">
+                <div class="header_logo">
+                    <a href="/"><img src="img/logo.png" alt="LAF"></a>
+                </div>
+
+                <div class="header_name">
+                    <h6 class="header_name-title">Автозапчасти</h6>
+                    <p class="header_name-subtitle">на выгодных условия</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="small-12 small-offset-0 medium-7 large-5 large-offset-3 columns">
+            <div class="header_left row align-middle">
+                <div class="header_phone">
+                    <a href="tel:+7(812)600-42-46">+7 (812) 600-42-46</a>
+                    <div class="header_phone-callback">
+                        <i class="fa fa-phone"><a href="#">заказать звонок</a></i>
+                    </div>
+                </div>
+
+                <div class="header_location">
+                    <i class="fa fa-map-marker"></i>
+                    <span>Санкт-Петербург</span>
+                </div>
+
+                <div class="header_auth">
+                    <img class="auth-avatar " src="img/login-icon.png" alt="login">
+                    <a class="auth-link" href="#">Войти</a>
+                </div>
+
+                <div class="header_cart show-for-small-only">
+                    <div class="cart">
+                        <a href="#"><span>корзина <span class="cart-quantity">(2)</span></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<nav class="nav">
+
+    <div class="row expanded align-middle">
+
+        <div class="small-12 small-order-3 medium-order-2 medium-8 large-4 large-order-1 columns">
+            <div class="search-bar">
+                <form action="" class="search-form form">
+                    <input class="form-input" type="text" name="search" placeholder="подобрать запчасть по номеру">
+                    <button type="submit" class="btn btn--form">Найти</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="small-12 medium-12 medium-order-1 large-6 large-order-2 columns">
+            <ul class="main-mnu mnu">
+                <li class="mnu-item"><a href="#" class="mnu-item_link">поиск по машине</a></li>
+                <li class="mnu-item"><a href="#" class="mnu-item_link">каталог товаров</a></li>
+                <li class="mnu-item"><a href="#" class="mnu-item_link">акции</a></li>
+                <li class="mnu-item"><a href="#" class="mnu-item_link">контакты</a></li>
+            </ul>
+        </div>
+
+        <div class="medium-4 medium-order-3 large-2 large-order-3 columns hide-for-small-only">
+            <div class="cart">
+                <a href="#"><span>корзина <span class="cart-quantity">(2)</span></span></a>
+            </div>
+        </div>
+
+    </div>
+
+</nav>
+
+<div class="breadcrumbs-wrapper row">
+    <div class="small-12 medium-12 columns">
+        <div class="breadcrumbs">
+            <a href="#" class="breadcrumbs-item">AUDI</a>
+            <a href="#" class="breadcrumbs-item">A4</a>
+            <a href="#" class="breadcrumbs-item">A4 седан (8EC,B7)</a>
+            <a href="#" class="breadcrumbs-item breadcrumbs-item--active">2.0 TDI quattro [BRD] 170 л.с. Дизель</a>
+        </div>
+    </div>
+</div>
+
+<div class="page row">
+    <div class="catalogue-bar small-12 medium-12 large-9 mnu align-middle">
+
+        <div class="medium-5">
+            <nav class="catalogue-nav">
+                <span class="catalogue-nav_title">Выбрать из каталога <span class="catalogue-nav_title_btn"></span></span>
+                <div class="catalogue-mnu-wrapper">
+                    <h3 class="catalogue-mnu-title">Полный каталог запчастей</h3>
+
+                    <ul class="catalogue-mnu mnu">
+                        <li class="catalogue-mnu_item catalogue-mnu_item--is-parent">
+                            <a href="#" class="catalogue-mnu_item-link">Родитель1</a>
+                            <ul class="catalogue-mnu--is-parent">
+                                <li class="catalogue-mnu_item catalogue-mnu_item--is-parent">
+                                    <a href="#" class="catalogue-mnu_item-link">Ребенок</a>
+                                    <ul class="catalogue-mnu--is-parent">
+                                        <li class="catalogue-mnu_item catalogue-mnu_item--is-parent">
+                                            <a href="#" class="catalogue-mnu_item-link">Внук</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="catalogue-mnu_item">
+                            <a href="#" class="catalogue-mnu_item-link">Родитель2</a>
+                        </li>
+
+                        <li class="catalogue-mnu_item">
+                            <a href="#" class="catalogue-mnu_item-link">Родитель2</a>
+                        </li>
+
+                        <li class="catalogue-mnu_item">
+                            <a href="#" class="catalogue-mnu_item-link">Родитель2</a>
+                        </li>
+
+                        <li class="catalogue-mnu_item">
+                            <a href="#" class="catalogue-mnu_item-link">Родитель2</a>
+                        </li>
+
+                        <li class="catalogue-mnu_item">
+                            <a href="#" class="catalogue-mnu_item-link">Родитель2</a>
+                        </li>
+
+                        <li class="catalogue-mnu_item">
+                            <a href="#" class="catalogue-mnu_item-link">Родитель2</a>
+                        </li>
+
+                        <li class="catalogue-mnu_item">
+                            <a href="#" class="catalogue-mnu_item-link">Родитель3</a>
+                        </li>
+
+                        <li class="catalogue-mnu_item catalogue-mnu_item--is-parent">
+                            <a href="#" class="catalogue-mnu_item-link ">Родитель4</a>
+                            <ul class="catalogue-mnu--is-parent">
+                                <li class="catalogue-mnu_item catalogue-mnu_item--is-parent">
+                                    <a href="#" class="catalogue-mnu_item-link ">Ребенок</a>
+                                    <ul class="catalogue-mnu--is-parent">
+                                        <li class="catalogue-mnu_item catalogue-mnu_item--is-parent">
+                                            <a href="#" class="catalogue-mnu_item-link ">Внук</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="catalogue-mnu-image show-for-medium">
+                        <img src="http://placehold.it/350x150?text=parent">
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+
+        <div class="medium-7 columns">
+            <div class="search-bar">
+                <form action="" class="catalogue-form form">
+                    <input class="form-input" type="text" name="search" placeholder="подобрать запчасть по номеру">
+                    <button type="submit" class="btn btn--form">Найти</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <main class="small-12 small-order-2 medium-9 medium-order-1 main columns">
+
+        <section class="section section--productlist row">
+
+            <div class="section_title">
+                <h2>Стекло двери задней правой для Audi A4</h2>
+            </div>
+
+            <div class="product-list_item">
+
+                <div class="product-list_item_image">
+                    <img src="http://placehold.it/200x200?text=img" alt="">
+                </div>
+
+                <div class="product-list_item_body">
+                    <div class="item-name">Lukoil 19184</div>
+                    <div class="item-subname">Моторное масло ЛУКОЙЛ Стандарт SF/CC SAE 10W-40 (1л)</div>
+
+                    <ul class="item-desc--mini">
+                        <li>Тип <span>минеральное</span></li>
+                        <li>Вязкость <span>10W-40</span></li>
+                        <li>Объем упаковки <span>1л</span></li>
+                    </ul>
+
+                </div>
+
+                <div class="product-list_item_info">
+                    <div class="item-rate"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+
+                    <div class="item-status item-status--available">На складе</div>
+                    <div class="item-quantity">В наличии <span class="item-quantity_total span--bold">100 шт.</span></div>
+                </div>
+
+                <div class="product-list_item_refs">
+                    <div class="item-price">157 руб.</div>
+                    <button type="button" class="btn btn--buy">В корзину</button>
+                    <button type="button" class="item-show-more-offers">показать другие предложения</button>
+                </div>
+
+                <div class="more-offers">
+
+                    <div class="more-offers-item">
+
+                        <div class="more-offers-item_safety more-offers-item_safety--good">
+                            Надежность поставщика <span class="offers-safety-perc span--bold">93%</span>
+                        </div>
+                        <div class="more-offers-item_payment">
+                            Предоплата
+                        </div>
+                        <div class="more-offers-item_delivery">
+                            Доставка <span class="span--bold">через 4 дн.</span>
+                        </div>
+                        <div class="more-offers-item_quantity">
+                            В наличии <span class="span--bold">109 шт.</span>
+                        </div>
+                        <div class="more-offers-item_price">
+                            143 руб.
+                        </div>
+                        <div class="more-offers-item_buy">
+                            <button type="button" class="btn btn--buy btn--mini">В корзину</button>
+                        </div>
+
+                    </div>
+
+                    <div class="more-offers-item">
+
+                        <div class="more-offers-item_safety more-offers-item_safety--good">
+                            Надежность поставщика <span class="offers-safety-perc span--bold">93%</span>
+                        </div>
+                        <div class="more-offers-item_payment">
+                            Предоплата
+                        </div>
+                        <div class="more-offers-item_delivery">
+                            Доставка <span class="span--bold">через 4 дн.</span>
+                        </div>
+                        <div class="more-offers-item_quantity">
+                            В наличии <span class="span--bold">109 шт.</span>
+                        </div>
+                        <div class="more-offers-item_price">
+                            143 руб.
+                        </div>
+                        <div class="more-offers-item_buy">
+                            <button type="button" class="btn btn--buy btn--mini">В корзину</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="product-list_item">
+
+                <div class="product-list_item_image">
+                    <img src="http://placehold.it/200x200?text=img" alt="">
+                </div>
+
+                <div class="product-list_item_body">
+                    <div class="item-name">Lukoil 19184</div>
+                    <div class="item-subname">Моторное масло ЛУКОЙЛ Стандарт SF/CC SAE 0W-30 (1л)</div>
+
+                    <ul class="item-desc--mini">
+                        <li>Тип <span>минеральное</span></li>
+                        <li>Вязкость <span>0W-30</span></li>
+                        <li>Объем упаковки <span>1л</span></li>
+                    </ul>
+
+                </div>
+
+                <div class="product-list_item_info">
+                    <div class="item-rate"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+
+                    <div class="item-status item-status--available">На складе</div>
+                    <div class="item-quantity">В наличии <span class="item-quantity_total">100 шт.</span></div>
+                </div>
+
+                <div class="product-list_item_refs">
+                    <div class="item-price">157 руб.</div>
+                    <button type="button" class="btn btn--buy">В корзину</button>
+                    <button type="button" class="item-show-more-offers">показать другие предложения</button>
+                </div>
+
+            </div>
+
+            <div class="product-list_item">
+
+                <div class="product-list_item_image">
+                    <img src="http://placehold.it/200x200?text=img" alt="">
+                </div>
+
+                <div class="product-list_item_body">
+                    <div class="item-name">Lukoil 19184</div>
+                    <div class="item-subname">Моторное масло ЛУКОЙЛ Стандарт SF/CC SAE 0W-40 (1л)</div>
+
+                    <ul class="item-desc--mini">
+                        <li>Тип <span>минеральное</span></li>
+                        <li>Вязкость <span>0W-40</span></li>
+                        <li>Объем упаковки <span>1л</span></li>
+                    </ul>
+
+                </div>
+
+
+                <div class="product-list_item_info">
+                    <div class="item-rate"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+
+                    <div class="item-status item-status--available">На складе</div>
+                    <div class="item-quantity">В наличии <span class="item-quantity_total">100 шт.</span></div>
+                </div>
+
+                <div class="product-list_item_refs">
+                    <div class="item-price">157 руб.</div>
+                    <button type="button" class="btn btn--buy">В корзину</button>
+                    <button type="button" class="item-show-more-offers">показать другие предложения</button>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <aside class="aside small-12 small-order-1 medium-3 medium-order-2 columns">
+
+        <div class="choosen-auto">
+            <div class="chosen-auto_title">
+                <h3>Выбранный автомобиль</h3>
+            </div>
+            <div class="chosen-auto_body">
+                <div class="chosen-auto_image">
+                    <img src="http://placehold.it/100x75" alt="car">
+                </div>
+                <div class="chosen-auto_specs">
+                    <div class="chosen-auto_specs_model">Audi A4</div>
+                    <div class="chosen-auto_specs_hars">2.0 TDI quattro BRD 170 л.с дизель</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="filter">
+            <div class="filter_title">
+                <h3>Фильтрация</h3>
+            </div>
+            
+            <div class="filter_set">
+
+                <div class="filter_set_items">
+                    <h4 class="filter_items_title">
+                        Тип
+                    </h4>
+                    <label class="filter_set_items_item-label">
+                        <input type="checkbox"  class="filter_set_items_item" >
+                        <span class="">минеральное</span>
+                    </label>
+
+                    <label class="filter_set_items_item-label">
+                        <input type="checkbox"  class="filter_set_items_item" >
+                        <span class="">полусинтетическое</span>
+                    </label>
+
+                    <label class="filter_set_items_item-label">
+                        <input type="checkbox"  class="filter_set_items_item" >
+                        <span class="">синтетическое</span>
+                    </label>
+                </div>
+
+                <div class="filter_set_items">
+                    <h4 class="filter_items_title">
+                        Вязкость
+                    </h4>
+                    <label class="filter_set_items_item-label" for="checkbox1">
+                        <input class="filter_set_items_item" id="checkbox1" type="checkbox">
+                        <span class="">0W-30</span>
+                    </label>
+
+                    <label class="filter_set_items_item-label">
+                        <input class="filter_set_items_item" type="checkbox">
+                        <span class="">0W-40</span>
+                    </label>
+
+                    <label class="filter_set_items_item-label">
+                        <input class="filter_set_items_item" type="checkbox">
+                        <span class="">0W-60</span>
+                    </label>
+                </div>
+
+            </div>
+        </div>
+
+    </aside>
+
+</div>
+
+<footer class="footer">
+    <div class="row">
+        <div class="small-4 medium-2 columns">
+            <h3 class="footer_title">О компании</h3>
+            <ul class="footer_mnu">
+                <li class="footer_mnu_item"><a href="#">Про LAF</a></li>
+                <li class="footer_mnu_item"><a href="#">Каталоги производителей</a></li>
+                <li class="footer_mnu_item"><a href="#">Наши партнеры</a></li>
+                <li class="footer_mnu_item"><a href="#">Новости</a></li>
+                <li class="footer_mnu_item"><a href="#">Вакансии</a></li>
+                <li class="footer_mnu_item"><a href="#">Контакты</a></li>
+                <li class="footer_mnu_item"><a href="#">Реквизиты</a></li>
+            </ul>
+        </div>
+        <div class="small-4 medium-2 columns">
+            <h3 class="footer_title">Парнтерам</h3>
+            <ul class="footer_mnu">
+                <li class="footer_mnu_item"><a href="#">Про LAF</a></li>
+                <li class="footer_mnu_item"><a href="#">Каталоги производителей</a></li>
+                <li class="footer_mnu_item"><a href="#">Наши партнеры</a></li>
+                <li class="footer_mnu_item"><a href="#">Новости</a></li>
+                <li class="footer_mnu_item"><a href="#">Вакансии</a></li>
+                <li class="footer_mnu_item"><a href="#">Контакты</a></li>
+                <li class="footer_mnu_item"><a href="#">Реквизиты</a></li>
+            </ul>
+        </div>
+        <div class="small-4 medium-2 columns">
+            <h3 class="footer_title">Клиентам</h3>
+            <ul class="footer_mnu">
+                <li class="footer_mnu_item"><a href="#">Про LAF</a></li>
+                <li class="footer_mnu_item"><a href="#">Каталоги производителей</a></li>
+                <li class="footer_mnu_item"><a href="#">Наши партнеры</a></li>
+                <li class="footer_mnu_item"><a href="#">Новости</a></li>
+                <li class="footer_mnu_item"><a href="#">Вакансии</a></li>
+                <li class="footer_mnu_item"><a href="#">Контакты</a></li>
+                <li class="footer_mnu_item"><a href="#">Реквизиты</a></li>
+            </ul>
+        </div>
+        <div class="small-12 small-offset-0 medium-4 medium-offset-2 columns">
+            <div class="footer_contacts">
+
+                <div class="footer_contacts_socials">
+                    <a href="#"><i class="fa fa-vk"></i></a>
+                </div>
+
+                <div class="footer_contacts_phone">
+                <p>Санкт-Петербург и_область <br> <a href="tel:+7(812)1111111">+7(812) 111 11 11</a></p>
+                </div>
+                <div class="footer_contacts_phone">
+                <p>Санкт-Петербург и область <br> <a href="tel:+7(812)1111111">+7(812) 111 11 11</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Optimized loading JS Start -->
+<script src="js/scripts.min.js"></script>
+<!-- Optimized loading JS End -->
+</body>
+</html>

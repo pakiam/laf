@@ -1,0 +1,395 @@
+@import "variables"
+@import 'normalize/import-now'
+@import 'font-awesome'
+@import 'settings/settings'
+$global-font-size: 62.5%
+$grid-row-width: 120rem
+$breakpoints: (small: 0, medium: 767px, large: 1200px, xlarge: 1920px, xxlarge: 2200px)
+$breakpoint-classes: (small medium large xlarge xxlarge)
+@import "foundation"
+@include foundation-flex-grid
+@include foundation-flex-classes
+@include foundation-visibility-classes
+
+@import "header"
+//asdasd
+.page
+  padding-bottom: 40rem
+
+/**** CATALOGUE BAR ****/
+.catalogue-bar
+  position: relative
+  background-color: #3768aa
+  color: rgba(255,255,255,.92)
+  @media screen and (max-width: 767px)
+    padding: 1.2rem 0
+.catalogue-nav
+  padding: 1.6rem 2rem
+  &:hover
+    background-color: lighten(#3768aa,10)
+  @media screen and (max-width: 767px)
+    margin-bottom: 1rem
+.catalogue-nav--active
+  background-color: lighten(#3768aa,10)
+.catalogue-nav_title
+  cursor: pointer
+  font-size: 2rem
+  &:after
+    content: '\f0c9'
+    font-family: 'FontAwesome'
+    padding-left: 2.4rem
+.catalogue-mnu-wrapper
+  position: absolute
+  left: 0
+  color: $main-font-color
+  margin-top: 1.8rem
+  display: flex
+  display: none
+  flex-flow: row wrap
+  width: 100%
+  max-height: 260px
+  background-color: #fff
+  padding: 2rem
+  z-index: 40
+  border-left: 1px solid #eeeeee
+  border-right: 1px solid #eeeeee
+  border-bottom: 1px solid #eeeeee
+  box-shadow: 2px 6px 10px 1px rgba(0,0,0,.7)
+.catalogue-mnu-title
+  flex: 1 0 100%
+  padding-bottom: 2rem
+  font-size: 2.4rem
+.catalogue-mnu
+  flex: 0 0 45%
+  padding: 0 1rem
+  overflow-y: scroll
+  max-height: 15rem
+  @media screen and (max-width: 767px)
+    flex: 0 0 100%
+    padding: 0
+.catalogue-mnu_item
+  width: 100%
+  padding: 0.4rem 0
+.catalogue-mnu_item-link
+  display: block
+  padding-left: .4rem
+  width: 100%
+.catalogue-mnu_item-link--active, .catalogue-mnu_item--is-parent--active
+  background-color: rgba(0,0,0,.75)
+  color: $sub-font-color
+  &:before
+    color: inherit
+.catalogue-mnu-image
+  flex: 0 0 55%
+  display: flex
+  justify-content: center
+.catalogue-mnu_item--is-parent
+  &:before
+    content: '\f0da'
+    float: left
+    font-family: 'FontAwesome'
+    padding-right: .4rem
+    padding-left: .6rem
+.catalogue-mnu--is-parent
+  padding-left: 2rem
+  color: #000
+  display: none
+
+/**** SECTION ****/
+.section
+  padding: 4rem 0
+.section_title
+  padding-bottom: 3rem
+  font-size: 1.8rem
+  letter-spacing: 1px
+  @media screen and (max-width: 767px)
+    line-height: 1.61*1.8rem
+    padding: 0 1rem
+
+/*** PRODUCTS LIST ***/
+.section--productlist
+  display: flex
+  @media screen and (max-width: 767px)
+    flex-flow: column wrap
+  @media screen and (min-width: 479px)
+    flex-flow: row wrap
+/** PRODUCT ITEM **/
+.product-list_item
+  position: relative
+  display: flex
+  border: 1px solid #eeeeee
+  flex-flow: row wrap
+  align-items: center
+  margin-top: 1rem
+  width: 100%
+  @media screen and (max-width: 1199px)
+    flex: 0 0 100%
+    margin-top: 2rem
+.product-list_item_image
+  flex: 0 0 15%
+  @media screen and (max-width: 1199px)
+    flex: 0 0 50%
+    display: flex
+    justify-content: center
+    padding-bottom: 3rem
+  @media screen and (min-width: 424px)
+    flex-flow: row wrap
+    flex: 1 0 50%
+  @media screen and (min-width: 1200px)
+    flex: 1 0 15%
+.product-list_item_body
+  flex: 0 0 50%
+  padding: 2rem 1rem
+  @media screen and (max-width: 1199px)
+    flex: 0 0 50%
+    padding-top: 2rem
+.item-name
+  text-transform: uppercase
+  font-weight: bold
+  @media screen and (max-width: 1199px)
+    padding-bottom: 1rem
+.item-subname
+  text-decoration: underline
+  padding-bottom: 1rem
+.item-desc--mini
+  @media screen and (max-width: 1199px)
+    padding-bottom: 2rem
+.product-list_item_info
+  flex: 0 0 15%
+  padding: 1rem 1rem 0.4rem 1rem
+  display: flex
+  flex-flow: column wrap
+  align-self: stretch
+  @media screen and (max-width: 1199px)
+    flex: 0 0 50%
+    display: flex
+    flex-flow: row wrap
+    padding-bottom: 2rem
+.item-rate
+  padding-bottom: 1rem
+  @media screen and (max-width: 1199px)
+    flex: 1 0 50%
+.fa-star
+  &:not(:last-of-type)
+    padding-right: 0.1rem
+  color: gold
+.item-status
+  text-transform: uppercase
+  padding: .6rem .2rem
+  border: 1px solid #eeeeee
+  text-align: center
+  max-width: 80%
+  @media screen and (max-width: 1199px)
+    flex: 1 0 50%
+.item-status--available
+  color: green
+  border: 1px solid green
+.item-quantity
+  margin-top: auto
+  font-size: 1.2rem
+  border-top: 1px solid #eeeeee
+  padding-top: .2rem
+  color: $title-color
+  @media screen and (max-width: 1199px)
+    flex: 0 0 100%
+    text-align: right
+    border-top: none
+.item-quantity_total
+  color: $main-font-color
+  font-weight: bold
+.product-list_item_refs
+  flex: 0 0 20%
+  display: flex
+  flex-flow: column wrap
+  padding: 1rem 1rem .8rem
+  align-self: stretch
+  background-color: #e5ecf2
+  @media screen and (max-width: 1199px)
+    flex: 0 0 50%
+    padding: 1rem
+    display: flex
+    flex-flow: row wrap
+  @media screen and (max-width: 479px)
+    flex: 0 0 100%
+    padding: 2rem 0
+    display: flex
+    flex-flow: row wrap
+
+.item-price
+  font-size: 2rem
+  padding-top: 1rem
+  padding-bottom: 2rem
+  @media screen and (max-width: 1199px)
+    flex: 1 0 50%
+    text-align: center
+  @media screen and (max-width: 479px)
+    flex: 0 0 50%
+    font-size: 2rem
+    text-align: center
+    padding: 0
+    line-height: 1.61*2rem
+.item-show-more-offers
+  font-size: 1rem
+  margin-top: auto
+  text-decoration: underline
+  @media screen and (max-width: 1199px)
+    flex: 0 0 100%
+    margin-top: 1rem
+    text-align: center
+  @media screen and (max-width: 479px)
+    flex: 0 0 100%
+    margin-top: 1rem
+    font-size: 1.2rem
+  &:before
+    content: '\f129'
+    padding-right: .6rem
+    text-decoration: none
+    font-family: 'FontAwesome'
+
+/* PRODUCT ITEM MORE OFFERS */
+.more-offers
+  border-top: 1px solid #eeeeee
+  width: 100%
+  display: none
+.more-offers-item
+  display: flex
+  flex-flow: row wrap
+  align-items: center
+  justify-content: space-between
+  margin: .6rem 0
+  padding: .4rem 2rem
+  @media screen and (max-width: 479px)
+    border-bottom: 2px solid #eeeeee
+    justify-content: center
+  &:hover
+    background-color: #e5ecf2
+    .more-offers-item_buy
+      opacity: 1
+      visibility: visible
+      transition: opacity .4s
+.more-offers-item_safety
+  color: $title-color
+  @media screen and (max-width: 479px)
+    flex: 1 0 50%
+    margin-top: 1rem
+  &:before
+    content: ''
+    display: inline-block
+    width: 20px
+    height: 20px
+    margin-right: 1rem
+    border-radius: 10px
+    vertical-align: middle
+    background-color: #000000
+    @media screen and (max-width: 479px)
+      display: none
+.more-offers-item_safety--good
+  &:before
+    background-color: green
+.more-offers-item_payment
+  @media screen and (max-width: 479px)
+    flex: 1 0 50%
+.more-offers-item_delivery
+  color: $title-color
+  @media screen and (max-width: 479px)
+    margin-top: 1rem
+    flex: 1 0 50%
+.more-offers-item_quantity
+  color: $title-color
+  @media screen and (max-width: 479px)
+    flex: 1 0 50%
+    margin-top: 1rem
+.more-offers-item_price
+  @media screen and (max-width: 479px)
+    flex: 1 0 50%
+    margin-top: 1rem
+    font-size: 2rem
+.more-offers-item_buy
+  opacity: 0
+  visibility: hidden
+  @media screen and (max-width: 479px)
+    flex: 1 0 50%
+    margin-top: 1rem
+
+/**** ASIDE ****/
+
+/*** CHOSEN AUTO ***/
+.choosen-auto
+  border: 1px solid #eee
+  padding: 1rem 1.5rem
+  @media screen and (max-width: 1199px)
+    margin-top: 10.5rem
+  @media screen and (max-width: 767px)
+    margin-top: 2rem
+  @media screen and (min-width: 1200px)
+    margin-top: -5rem
+.chosen-auto_body
+  padding: 1rem 0
+  display: flex
+  flex-flow: row wrap
+.chosen-auto_specs
+  color: $title-color
+.chosen-auto_image, .chosen-auto_specs
+  flex: 1 0 50%
+
+/*** FILTERS ***/
+.filter
+  border: 1px solid #eeeeee
+  margin-top: 2rem
+  padding: 1rem
+.filter_title
+  padding-bottom: 1rem
+  @media screen and (max-width: 1199px)
+    padding-bottom: 0
+.filter_items_title
+  display: inline-table
+  border-bottom: 1px dotted
+  flex: 1 0 100%
+  &:after
+    content: '\f128'
+    border: 1px dotted
+    padding: .1rem
+    font-family: 'FontAwesome'
+.filter_set
+  @media screen and (max-width: 1199px)
+    display: none
+    padding-top: 1rem
+  @media screen and (min-width: 1200px)
+    display: block
+
+.filter_set_items
+  display: flex
+  flex-flow: column wrap
+  margin-top: 1rem
+.filter_set_items_item
+  flex: 1 1
+  margin-top: 1rem
+/**** FOOTER ****/
+.footer
+  background-color: #3768aa
+  padding: 3rem 0
+  display: flex
+  flex-flow: row wrap
+.footer_title
+  color: $main-font-color
+  font-weight: bold
+  padding-bottom: 1rem
+.footer_mnu
+  padding-top: 1rem
+  color: $sub-font-color
+.footer_mnu_item
+  &:not(:first-child)
+    padding-top: .6rem
+.footer_contacts
+  color: $sub-font-color
+  @media screen and (max-width: 479px)
+    margin-top: 2rem
+.footer_contacts_socials
+  font-size: 3rem
+.footer_contacts_phone
+  padding-top: 2rem
+  font-size: 1.6rem
+  line-height: 2.4rem
+  a
+    font-size: 2.2rem
+

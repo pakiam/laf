@@ -1,0 +1,250 @@
+@import "variables"
+*, *:after, *:before
+  box-sizing: inherit
+// GLOBAL STYLES
+html
+  box-sizing: border-box
+  font-size: 62.5%
+  @media screen and (max-width: 479px)
+    font-size: 50%
+body
+  font-family: $main-font
+  margin: 0
+  padding: 0
+  font-size: 1.4rem
+  line-height: 1.6rem
+  position: relative
+  overflow-x: hidden
+  color: $main-font-color
+
+img
+  max-width: 100%
+  vertical-align: middle
+h1, h2, h3, h4, h5, h6, p
+  margin: 0
+  padding: 0
+  font-weight: 400
+a
+  color: inherit
+  text-decoration: none
+  font-family: $main-font
+button
+  border-radius: 0
+  cursor: pointer
+  border: none
+  color: inherit
+  padding: 0
+  background: transparent
+
+ul,ol
+  margin: 0
+  padding: 0
+  list-style-type: none
+.span--bold
+  color: $main-font-color
+  font-weight: bold
+.fa
+  &:before
+    vertical-align: middle
+.btn
+  background-color: red
+  border-radius: 0
+  transition: background-color .1s
+  &:hover
+    background-color: darken(red, 5)
+.btn--buy
+  color: $sub-font-color
+  padding: .6rem
+  font-size: 1.8rem
+  max-width: 80%
+  @media screen and (max-width: 479px)
+    max-width: 100%
+    flex: 0 0 50%
+  @media screen and (max-width: 767px)
+    flex: 0 0 50%
+    font-size: 1.4rem
+  &:before
+    content: '\f07a'
+    font-family: 'FontAwesome'
+    padding-right: 1rem
+
+.btn--form
+  flex: 1 0
+  margin: 0
+  padding: .2rem .6rem
+.btn--mini
+  font-size: 1.4rem
+  max-width: 100%
+/**** HEADER ****/
+.header
+  padding: 2rem
+  @media screen and (min-width: 768px) and (max-width: 1199px)
+    padding: 1rem
+.header_right
+  padding-left: 2rem
+  @media screen and (max-width: 767px)
+    padding: 0
+    margin-bottom: 1rem
+  @media screen and (max-width: 767px)
+    margin-bottom: 2rem
+  @media screen and (max-width: 1199px)
+    padding-left: 0
+.header_left
+  @media screen and (max-width: 479px)
+    margin-top: 1rem
+  @media screen and (max-width: 767px)
+    margin-top: 2rem
+.header_logo
+  flex: 1 0 40%
+  @media screen and (max-width: 767px)
+    flex: 1 0 40%
+  @media screen and (max-width: 1199px)
+    flex: 0 0 30%
+
+.header_name
+  flex: 1 0 60%
+  color: $title-color
+  padding-left: 1rem
+  @media screen and (max-width: 767px)
+    flex: 1 0 60%
+    text-align: right
+  @media screen and (max-width: 1199px)
+    flex: 0 0 70%
+    padding-left: 1rem
+
+.header_name-title
+  font-size: 3rem
+  font-weight: 300
+  line-height: 3.4rem
+
+.header-right-flex-and-padding
+  flex: 1 0
+  padding-left: .9375rem
+  padding-right: .9375rem
+  @media screen and (max-width: 767px)
+    flex: 1 0 50%
+
+.header_phone
+  @extend .header-right-flex-and-padding
+  font-size: 1.4rem
+  color: $title-color
+  @media screen and (max-width: 1199px)
+    text-align: right
+    flex: 2 0
+  @media screen and (max-width: 767px)
+    text-align: left
+    flex: 1 0 50%
+  @media screen and (max-width: 479px)
+    flex: 1 0 50%
+.header_phone-callback
+  font-size: 1.2rem
+  padding-top: .6rem
+  .fa
+    a
+      padding-left: .6rem
+
+.header_location
+  @extend .header-right-flex-and-padding
+  text-align: center
+  font-size: 1.2rem
+  color: cornflowerblue
+  @media screen and (max-width: 1199px)
+    flex: 2 0
+  @media screen and (max-width: 767px)
+    align-self: flex-start
+    text-align: right
+  .fa
+    font-size: 2rem
+  @media screen and (max-width: 479px)
+    flex: 1 0 50%
+.header_auth
+  @extend .header-right-flex-and-padding
+  @media screen and (max-width: 1199px)
+    flex: 1 0
+  @media screen and (max-width: 767px)
+    margin-top: 2rem
+    align-self: center
+    flex: 1 0 50%
+.auth-avatar
+  height: 40px
+  width: 40px
+  @media screen and (max-width: 1199px)
+    display: none
+.auth-link
+  border-bottom: 1px dotted #000
+  transition: border-bottom .3s
+  &:hover
+    border-bottom: 1px dotted transparent
+.header_cart
+  @extend .header-right-flex-and-padding
+  margin-top: 2rem
+  align-self: center
+/**** NAV BAR ****/
+.nav
+  padding: 1.2rem 2rem
+  background-color: #3768aa
+  color: $sub-font-color
+  @media screen and (max-width: 767px)
+    padding: 1.2rem 0
+.form
+  display: flex
+  @media screen and (max-width: 479px)
+    padding: 2rem 0 1rem 0
+.form-input
+  flex: 4 0
+  border: 0
+  color: $main-font-color
+  outline: none
+  //max-width: 270px
+  margin: 0
+  padding: .6rem 1rem
+
+/**** MAIN MENU ****/
+.mnu
+  display: flex
+  flex-flow: row wrap
+.mnu-item
+  margin: 1rem 1.6rem
+  border-bottom: 1px dotted transparent
+  transition: border-bottom .1s
+  &:hover
+    border-bottom: 1px dotted
+
+/**** CART ICON ****/
+.cart
+  text-align: right
+  &:before
+    vertical-align: middle
+    padding-right: 1rem
+    font-size: 1.8rem
+    content: '\f07a'
+    font-family: 'FontAwesome'
+
+
+/**** BREADCRUMBS ****/
+.breadcrumbs-wrapper
+  margin: 1.6rem auto
+  border: 1px solid rgba(0,0,0,.14)
+.breadcrumbs
+  font-size: 1.4rem
+  padding: 1.4rem 2rem
+  display: flex
+  align-items: center
+  flex-flow: row wrap
+.breadcrumbs-item
+  flex-flow: row wrap
+  color: rgba(0, 0, 0, .54)
+  @media screen and (max-width: 479px)
+    margin-top: 1rem
+  &:not(:last-of-type)
+    padding-right: 1.8rem
+  &:after
+    font-size: 1rem
+    padding-left: .4rem
+    content: '\f178'
+    font-family: 'FontAwesome'
+  &:before
+    content: '>>'
+    padding-right: .6rem
+.breadcrumbs-item--active
+  color: inherit
